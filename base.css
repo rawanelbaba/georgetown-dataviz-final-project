@@ -101,7 +101,7 @@ h1 {
   stroke-width: 0.8;
 }
 
-.mark: hover {
+.mark:hover {
   fill-opacity: 0.5;
 }
 
@@ -141,8 +141,4 @@ h1 {
   fill: #f00;
   fill-opacity: 0.5;
   stroke: #f00;
-}
-
-.death-circle: hover {
-	fill-opacity: 0.8;
 }
