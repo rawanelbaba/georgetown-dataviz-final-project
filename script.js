@@ -81,7 +81,7 @@ d3.csv('Journalists-Killed.csv').then((data) => {
             .attr('height', (d) => {
               return yScale.range()[1]-yScale(d[keyToUse])
             })
-            .attr('fill','fill-opacity', 0.5)
+            .attr('fill','red')
             .attr('class', 'mark')
         
         bars.on('mouseover', (d) => {
