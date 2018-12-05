@@ -142,3 +142,17 @@ h1 {
   fill-opacity: 0.5;
   stroke: #f00;
 }
+
+.death-circle: hover {
+	fill-opacity: 0.8;
+}
+
+#hint {
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: Avenir; 
+}
