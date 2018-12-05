@@ -105,9 +105,15 @@ h1 {
   fill-opacity: 0.5;
 }
 
-.death-circle: hover {
+.death-circle {
   cursor: pointer;
+  fill: red;
   fill-opacity: 0.5;
+  stroke: #f00;
+}
+
+.death-circle: hover {
+  fill-opacity: 0.8;
 }
 
 #tooltip {
@@ -140,10 +146,4 @@ h1 {
 .countries {
   fill: #eee;
   stroke: #ddd;
-}
-
-.death-circle {
-  fill: #f00;
-  fill-opacity: 0.5;
-  stroke: #f00;
 }
