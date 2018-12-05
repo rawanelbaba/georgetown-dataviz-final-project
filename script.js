@@ -111,4 +111,4 @@ d3.csv('Journalists-Killed.csv').then((data) => {
       renderChart(filter,wording)
     })
 
-})
+}) 
