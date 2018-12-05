@@ -67,27 +67,27 @@ h2.subhead {
 }
 
 .chart { 
-  width: 100%;
+	width: 100%;
 }
 
 .domain {
-  display: none;
+	display: none;
 }
 
 .tick line {
-  stroke: #ccc;
+	stroke: #ccc;
 
 }
 
 .tick text {
-  fill: #999;
-  font-family: Avenir;
-  text-align: center;
+	fill: #999;
+	font-family: Avenir;
+	text-align: center;
 }
 
 .hover {
-  stroke: #000;
-  stroke-width: 2;
+	stroke: #000;
+	stroke-width: 2;
 }
 
 h1 {
@@ -95,35 +95,34 @@ h1 {
 }
 
 .mark {
-  cursor: pointer;
-  fill: red;
-  stroke: #ccc;
-  stroke-width: 0.8;
+	cursor: pointer;
+	fill: red;
+	stroke: #ccc;
+	stroke-width: 0.8;
 }
 
 .mark: hover {
-  fill-opacity: 0.5;
+	fill-opacity: 0.5;
 }
 
 #tooltip {
-  pointer-events: none;
-  position: absolute;
-  display: none;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #ccc;
-  font-family: Avenir; 
+	pointer-events: none;
+	position: absolute;
+	display: none;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #ccc;
+	font-family: Avenir; 
 }
 
 #nav a {
-  cursor: pointer;
-  color: white;
-  font-family: Avenir;
-  font-size: 14px;
-  background-color: grey;
-  padding: 7px;
-  border-radius: 10px;
-  text-decoration: none;
+	color: white;
+	font-family: Avenir;
+	font-size: 14px;
+	background-color: grey;
+	padding: 7px;
+	border-radius: 10px;
+	text-decoration: none;
 }
 
 #chart-1 {
