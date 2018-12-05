@@ -102,7 +102,7 @@ h1 {
 }
 
 .mark: hover {
-  fill-opaccity: 0.5;
+  fill-opacity: 0.5;
 }
 
 .death-circle: hover {
