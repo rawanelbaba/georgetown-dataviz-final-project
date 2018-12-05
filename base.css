@@ -97,7 +97,6 @@ h1 {
 .mark: hover {
   cursor: pointer;
   fill-opacity: 0.5;
-  fill: red;
   stroke: #ccc;
   stroke-width: 0.8;
 }
@@ -143,8 +142,6 @@ h1 {
 .death-circle {
   cursor: pointer;
   fill-opacity: 0.8;
-  fill: red;
-  fill-opacity: 0.5;
   stroke: #f00;
 }
 
