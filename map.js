@@ -98,9 +98,9 @@ d3.json("world-data.json")
             .selectAll('circle')
             .data(pointData)
             .enter()
-            .append('circle') 
-    
-            .attr('class', 'death-circle')    
+            .append('circle')   
+            
+            .attr('class', 'death-circle')
             .each((d,i,e) => {
                 let _this = d3.select(e[i])
                 let proj = projection([d.lon,d.lat])
@@ -108,5 +108,6 @@ d3.json("world-data.json")
                 _this.attr('cx', proj[0])
                     .attr('cy', proj[1])
                     .attr('r', size(d.No_Killed))
-    
+
+            })
     })
