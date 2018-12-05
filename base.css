@@ -101,6 +101,10 @@ h1 {
   stroke-width: 0.8;
 }
 
+.mark:hover {
+	fill-opacity: 0.5;
+}
+
 #tooltip {
   pointer-events: none;
   position: absolute;
