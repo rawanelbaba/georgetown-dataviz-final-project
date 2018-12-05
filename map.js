@@ -1,3 +1,6 @@
+//Select the div with an id of hint
+let hint = d3.select('#hint')
+
 let pointData = [{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lon":67.709953},
 {"Country_Name":"Angola","No_Killed":1,"lat":-11.202692,"lon":17.873887},
 {"Country_Name":"Azerbaijan","No_Killed":2,"lat":40.143105,"lon":47.576927},
@@ -98,16 +101,19 @@ d3.json("world-data.json")
             .selectAll('circle')
             .data(pointData)
             .enter()
-            .append('circle')   
-            
-            .attr('class', 'death-circle')
-            .each((d,i,e) => {
+            .append('circle') 
+    
+                .each((d,i,e) => {
                 let _this = d3.select(e[i])
                 let proj = projection([d.lon,d.lat])
                 
                 _this.attr('cx', proj[0])
                     .attr('cy', proj[1])
                     .attr('r', size(d.No_Killed))
-
-            })
+            
+            .attr('class', 'death-circle')
+            .on('mouseover', (d) => {
+                //write the country name in the hint
+                hint.html(d.Country_Name)
+    
     })
