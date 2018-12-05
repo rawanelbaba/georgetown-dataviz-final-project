@@ -102,13 +102,6 @@ h1 {
   stroke-width: 0.8;
 }
 
-<<<<<<< HEAD
-=======
-.mark: hover {
-  fill-opacity: 0.5;
-}
-
->>>>>>> bab9dc61025690c0b9d24d4ed90e4ab00f183e65
 #tooltip {
   pointer-events: none;
   position: absolute;
@@ -149,12 +142,9 @@ h1 {
 
 .death-circle {
   cursor: pointer;
-<<<<<<< HEAD
   fill-opacity: 0.8;
-=======
   fill: red;
   fill-opacity: 0.5;
->>>>>>> bab9dc61025690c0b9d24d4ed90e4ab00f183e65
   stroke: #f00;
 }
 
