@@ -100,7 +100,7 @@ d3.json("world-data.json")
             .enter().append('circle')
             .attr("fill", "red")   
             
-            .attr('fill-opacity', 1)
+            .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
             .each((d,i,e) => {
                 let _this = d3.select(e[i])
