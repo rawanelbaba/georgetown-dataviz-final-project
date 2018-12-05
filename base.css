@@ -6,7 +6,7 @@ html, body {
 .headline {
   max-width: 600px;
   margin: 30px auto 20px auto;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: Avenir, sans-serif;
   color: #222;
   font-size: 48px;
 
@@ -17,7 +17,7 @@ html, body {
   margin: 0px auto 20px auto;
   color: #222;
   font-size: 24px;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: Avenir, sans-serif;
 }
 
 h2.subhead {
@@ -29,7 +29,7 @@ h2.subhead {
   margin: 0px auto 20px auto;
   color: #222;
   font-size: 14px;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: Avenir, sans-serif;
 }
 
 .story-body .credit {
@@ -37,7 +37,7 @@ h2.subhead {
   margin: 10px auto 20px auto;
   color: #666;
   font-size: 13px;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: Avenir, sans-serif;
 }
 
 .story-body p {
@@ -63,66 +63,65 @@ h2.subhead {
   transform: translate(-50%,-50%);
   color: #999;
   font-size: 20px;
-  font-family: Helvetica, Arial, Sans-Serif;
+  font-family: Avenir, sans-serif;
 }
 
 .chart { 
-	width: 100%;
+  width: 100%;
 }
 
 .domain {
-	display: none;
+  display: none;
 }
 
 .tick line {
-	stroke: #ccc;
-
+  stroke: #ccc;
 }
 
 .tick text {
-	fill: #999;
-	font-family: Avenir;
-	text-align: center;
+  fill: #999;
+  font-family: Avenir;
+  text-align: center;
 }
 
 .hover {
-	stroke: #000;
-	stroke-width: 2;
+  stroke: #000;
+  stroke-width: 2;
 }
 
 h1 {
-    font-family: Avenir, sans-serif;
+  font-family: Avenir, sans-serif;
 }
 
 .mark {
-	cursor: pointer;
-	fill: red;
-	stroke: #ccc;
-	stroke-width: 0.8;
+  cursor: pointer;
+  fill: red;
+  stroke: #ccc;
+  stroke-width: 0.8;
 }
 
 .mark: hover {
-	fill-opacity: 0.5;
+  fill-opacity: 0.5;
 }
 
 #tooltip {
-	pointer-events: none;
-	position: absolute;
-	display: none;
-	background-color: #fff;
-	padding: 5px;
-	border: 1px solid #ccc;
-	font-family: Avenir; 
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: Avenir; 
 }
 
 #nav a {
-	color: white;
-	font-family: Avenir;
-	font-size: 14px;
-	background-color: grey;
-	padding: 7px;
-	border-radius: 10px;
-	text-decoration: none;
+  color: white;
+  font-family: Avenir;
+  font-size: 14px;
+  background-color: grey;
+  padding: 7px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 #chart-1 {
