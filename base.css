@@ -132,3 +132,10 @@ h1 {
   fill: #eee;
   stroke: #ddd;
 }
+
+.death-circle:hover {
+  cursor: pointer;
+  fill-opacity: 0.3;
+  stroke: #ccc;
+  stroke-width: 0.8;
+}
