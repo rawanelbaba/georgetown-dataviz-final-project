@@ -135,7 +135,7 @@ h1 {
 
 .death-circle:hover {
   cursor: pointer;
-  fill-opacity: 0.3;
+  fill-opacity: 1;
   stroke: #ccc;
   stroke-width: 0.8;
 }
