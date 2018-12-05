@@ -101,7 +101,7 @@ h1 {
   stroke-width: 0.8;
 }
 
-.mark:hover {
+.mark: hover {
 	fill-opacity: 0.5;
 }
 
