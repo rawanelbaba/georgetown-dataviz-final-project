@@ -1,5 +1,5 @@
 //Select the div with an id of tooltip-2
-let tooltip-2 = d3.select('#tooltip-2')
+let tooltip = d3.select('#tooltip')
 
 let pointData = [{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lon":67.709953},
 {"Country_Name":"Angola","No_Killed":1,"lat":-11.202692,"lon":17.873887},
@@ -106,8 +106,8 @@ d3.json("world-data.json")
             .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
             .on('mousover', (d) => {
-            //write the country name in tooltip-2
-            tooltip-2.html(d.Country_Name)
+            //write the country name in tooltip
+            tooltip.html(d.Country_Name)
            
             .each((d,i,e) => {
                 let _this = d3.select(e[i])
