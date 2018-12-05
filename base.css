@@ -6,7 +6,7 @@ html, body {
 .headline {
   max-width: 600px;
   margin: 30px auto 20px auto;
-  font-family: Avenir, sans-serif;
+  font-family: Helvetica, Arial, Sans-Serif;
   color: #222;
   font-size: 48px;
 
@@ -17,7 +17,7 @@ html, body {
   margin: 0px auto 20px auto;
   color: #222;
   font-size: 24px;
-  font-family: Avenir, sans-serif;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
 h2.subhead {
@@ -29,7 +29,7 @@ h2.subhead {
   margin: 0px auto 20px auto;
   color: #222;
   font-size: 14px;
-  font-family: Avenir, sans-serif;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
 .story-body .credit {
@@ -37,7 +37,7 @@ h2.subhead {
   margin: 10px auto 20px auto;
   color: #666;
   font-size: 13px;
-  font-family: Avenir, sans-serif;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
 .story-body p {
@@ -63,7 +63,7 @@ h2.subhead {
   transform: translate(-50%,-50%);
   color: #999;
   font-size: 20px;
-  font-family: Avenir, sans-serif;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
 .chart { 
@@ -76,6 +76,7 @@ h2.subhead {
 
 .tick line {
   stroke: #ccc;
+
 }
 
 .tick text {
@@ -90,7 +91,7 @@ h2.subhead {
 }
 
 h1 {
-  font-family: Avenir, sans-serif;
+    font-family: Avenir, sans-serif;
 }
 
 .mark {
@@ -101,6 +102,11 @@ h1 {
 }
 
 .mark: hover {
+  fill-opaccity: 0.5;
+}
+
+.death-circle: hover {
+  cursor: pointer;
   fill-opacity: 0.5;
 }
 
@@ -115,6 +121,7 @@ h1 {
 }
 
 #nav a {
+  cursor: pointer;
   color: white;
   font-family: Avenir;
   font-size: 14px;
