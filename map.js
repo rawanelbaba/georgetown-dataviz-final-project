@@ -97,9 +97,10 @@ d3.json("world-data.json")
         mapSvg.append('g')
             .selectAll('circle')
             .data(pointData)
-            .enter()
-            .append('circle')   
+            .enter().append('circle')
+            .attr("fill", "red")   
             
+            .attr('fill-opacity', 1)
             .attr('class', 'death-circle')
             .each((d,i,e) => {
                 let _this = d3.select(e[i])
