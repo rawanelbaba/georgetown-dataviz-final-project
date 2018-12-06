@@ -109,5 +109,3 @@ d3.csv('Journalists-Killed.csv').then((data) => {
       let wording = e[i].getAttribute('data-wording')
       renderChart(filter,wording)
     })
-
-}) 
