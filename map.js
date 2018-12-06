@@ -69,7 +69,7 @@ var mapSvg = d3.select("#chart-2").append('svg'),
     mapHeight = 400;
 
 // Select the div with an id of tooltip
-let tooltip = d3.select('#tooltip')
+let Maptooltip = d3.select('#tooltip')
 
 // Map and projection
 var path = d3.geoPath();
@@ -113,13 +113,13 @@ d3.json("world-data.json")
               let html = `${d.No_Killed}<br>${d.Country_Name}`
 
               //Get the mouse's position
-              tooltip.html (html)
+              Maptooltip.html (html)
                   .style('left', left + 'px')
                   .style('top', top + 'px')
                   .style('display', 'block')
             })
             .on('mouseleave', (d) => {
-              tooltip.html ('')
+              Maptooltip.html ('')
                 .style ('display', 'none')
              })
     
