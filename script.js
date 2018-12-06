@@ -100,7 +100,6 @@ d3.csv('Journalists-Killed.csv').then((data) => {
               tooltip.html ('')
                 .style ('display', 'none')
              })
-    }
 
 
     renderChart()
