@@ -122,7 +122,6 @@ d3.json("world-data.json")
               tooltip.html ('')
                 .style ('display', 'none')
              })
-    }
     
             .each((d,i,e) => {
                 let _this = d3.select(e[i])
