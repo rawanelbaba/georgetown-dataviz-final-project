@@ -65,8 +65,11 @@ let pointData = [{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lo
 {"Country_Name":"Yemen","No_Killed":19,"lat":15.552727,"lon":48.516388}]
 
 var mapSvg = d3.select("#chart-2").append('svg'),
-    mapWidth = 960,
-    mapHeight = 600;
+    mapWidth = 600,
+    mapHeight = 400;
+
+// Select the div with an id of tooltip
+let tooltip = d3.select('#tooltip')
 
 // Map and projection
 var path = d3.geoPath();
@@ -103,6 +106,24 @@ d3.json("world-data.json")
             .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
            
+            .on('mouseover', (d) => {
+              let left = d3.event.pageX 
+              let top = d3.event.pageY
+
+              let html = `${d.No_Killed}<br>${d.Country_Name}`
+
+              //Get the mouse's position
+              tooltip.html (html)
+                  .style('left', left + 'px')
+                  .style('top', top + 'px')
+                  .style('display', 'block')
+            })
+            .on('mouseleave', (d) => {
+              tooltip.html ('')
+                .style ('display', 'none')
+             })
+    }
+    
             .each((d,i,e) => {
                 let _this = d3.select(e[i])
                 let proj = projection([d.lon,d.lat])
