@@ -65,8 +65,8 @@ let pointData = [{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lo
 {"Country_Name":"Yemen","No_Killed":19,"lat":15.552727,"lon":48.516388}]
 
 var mapSvg = d3.select("#chart-2").append('svg'),
-    mapWidth = 600,
-    mapHeight = 400;
+    mapWidth = 800,
+    mapHeight = 600;
 
 // Select the div with an id of tooltip
 let Maptooltip = d3.select('#tooltip')
