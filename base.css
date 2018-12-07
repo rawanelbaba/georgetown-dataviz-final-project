@@ -131,6 +131,9 @@ h1 {
 .countries {
   fill: #eee;
   stroke: #ddd;
+}
+
+#chart-2 {
   margin-left: auto;
   margin-right: auto;
   width: 600px;
