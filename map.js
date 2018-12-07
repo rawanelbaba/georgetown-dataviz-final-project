@@ -110,7 +110,7 @@ d3.json("world-data.json")
               let left = d3.event.pageX 
               let top = d3.event.pageY
 
-              let html = `${d.No_Killed}<br>${d.Country_Name}`
+              let html = `${d.No_Killed} killed<br>${d.Country_Name}`
 
               //Get the mouse's position
               Maptooltip.html (html)
