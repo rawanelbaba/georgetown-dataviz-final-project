@@ -103,7 +103,6 @@ d3.json("world-data.json")
                 .attr('fill-opacity', 0.3)
             .selectAll('circle')
                 .data(pointData)
-                    .sort(function(a, b) { return b.No_Killed - a.No_Killed; })
             .enter().append('circle')
            
             .on('mouseover', (d) => {
@@ -111,6 +110,9 @@ d3.json("world-data.json")
               let top = d3.event.pageY
 
               let html = `${d.No_Killed} killed<br>${d.Country_Name}`
+              
+              .sort(function(a, b) { return b.No_Killed - a.No_Killed; });
+
 
               //Get the mouse's position
               Maptooltip.html (html)
