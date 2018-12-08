@@ -1,4 +1,5 @@
-let pointData = [{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lon":67.709953},
+let pointData = [
+{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lon":67.709953},
 {"Country_Name":"Angola","No_Killed":1,"lat":-11.202692,"lon":17.873887},
 {"Country_Name":"Azerbaijan","No_Killed":2,"lat":40.143105,"lon":47.576927},
 {"Country_Name":"Bahrain","No_Killed":3,"lat":25.930414,"lon":50.637772},
@@ -26,7 +27,7 @@ let pointData = [{"Country_Name":"Afghanistan","No_Killed":23,"lat":33.93911,"lo
 {"Country_Name":"Indonesia","No_Killed":5,"lat":-0.789275,"lon":113.921327},
 {"Country_Name":"Iran","No_Killed":2,"lat":32.427908,"lon":53.688046},
 {"Country_Name":"Iraq","No_Killed":57,"lat":33.223191,"lon":43.679291},
-{"Country_Name":"Israel and the Occupied Palestinian Territory","No_Killed":9,"lat":31.046051,"lon":34.851612},
+{"Country_Name":"Israel","No_Killed":9,"lat":31.046051,"lon":34.851612},
 {"Country_Name":"Ivory Coast","No_Killed":1,"lat":7.539989,"lon":-5.54708},
 {"Country_Name":"Kenya","No_Killed":2,"lat":-0.023559,"lon":37.906193},
 {"Country_Name":"Lebanon","No_Killed":2,"lat":33.854721,"lon":35.862285},
