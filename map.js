@@ -104,7 +104,7 @@ d3.json("world-data.json")
                 .attr('fill-opacity', 0.3)
             .selectAll('circle')
                 .data(pointData)
-                    .sort(function(a, b) { return a.x - b.x });
+                    .sort(function(a, b) { return a.x - b.x })
 
             .enter().append('circle')
            
