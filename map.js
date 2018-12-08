@@ -113,7 +113,7 @@ d3.json("world-data.json")
 
               let html = `${d.No_Killed} killed<br>${d.Country_Name}`
               
-        pointData.sort(function(a, b) { return a.x - b.x });
+        pointData.sort(function(d) { return d.No_Killed - d.No_Killed });
 
               //Get the mouse's position
               Maptooltip.html (html)
