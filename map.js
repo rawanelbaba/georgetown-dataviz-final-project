@@ -100,10 +100,10 @@ d3.json("world-data.json")
         mapSvg.append('g')
             .selectAll('circle')
             .data(pointData)
-                .sort(function(a, b) { return b.properties.No_Killed - a.properties.No_Killed;
+                .sort(function(a, b) { return b.properties.No_Killed - a.properties.No_Killed; })
             .enter().append('circle')
-                .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")";
-                .attr("r", function(d) { return radius(d.properties.No_Killed);
+                .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+                .attr("r", function(d) { return radius(d.properties.No_Killed); })
             .attr("fill", "red")   
             
             .attr('fill-opacity', 0.3)
