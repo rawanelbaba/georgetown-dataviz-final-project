@@ -98,13 +98,16 @@ d3.json("world-data.json")
                 .attr("d", path);
 
         mapSvg.append('g')
+                .attr('class', 'death-circle')
             .selectAll('circle')
-            .data(pointData)
+                .data(pointData)
+                    .sort(function(a, b) { return b.No_Killed - a.No_Killed; }))
             .enter().append('circle')
+                .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
+                .attr("r", function(d) { return radius(d.No_Killed); });
             .attr("fill", "red")   
             
             .attr('fill-opacity', 0.3)
-            .attr('class', 'death-circle')
            
             .on('mouseover', (d) => {
               let left = d3.event.pageX 
