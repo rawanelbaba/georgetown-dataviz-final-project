@@ -80,8 +80,8 @@ var path = d3.geoPath()
     .projection(projection);
 
 let size = d3.scaleSqrt()
-    .domain([1,114])
-    .range([1,50])
+    .domain([0,114])
+    .range([0,50])
 
 // Load external data and boot
 d3.json("world-data.json")
