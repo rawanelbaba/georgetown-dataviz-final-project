@@ -106,7 +106,7 @@ d3.json("world-data.json")
                     .sort(function(a, b) { return b.No_Killed - a.No_Killed; })
             .enter().append('circle')
                 .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; })
-                .attr("r", function(d) { return radius(d.No_Killed); });
+                .attr("r", function(d) { return radius(d.No_Killed); })
            
             .on('mouseover', (d) => {
               let left = d3.event.pageX 
