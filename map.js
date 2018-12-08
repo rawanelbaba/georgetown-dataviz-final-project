@@ -101,9 +101,10 @@ d3.json("world-data.json")
         mapSvg.append('g')
             .selectAll('circle')
             .data(pointData)
-            .enter()
-            .append('circle')   
+            .enter().append('circle')
+            .attr("fill", "red")   
             
+            .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
            
             .on('mouseover', (d) => {
@@ -111,9 +112,6 @@ d3.json("world-data.json")
               let top = d3.event.pageY
 
               let html = `${d.No_Killed} killed<br>${d.Country_Name}`
-              
-        pointData.sort(function(a, b) { return a.x - b.x });
-
               
         pointData.sort(function(a, b) { return a.x - b.x });
 
