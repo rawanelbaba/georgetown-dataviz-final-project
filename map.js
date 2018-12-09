@@ -69,6 +69,10 @@ var mapSvg = d3.select("#chart-2").append('svg'),
     mapWidth = 800,
     mapHeight = 600;
 
+let size = d3.scaleSqrt()
+    .domain([0,112])
+    .range([0,50])
+
 // Select the div with an id of tooltip
 let Maptooltip = d3.select('#tooltip')
 
@@ -102,6 +106,8 @@ d3.json("world-data.json")
             
             .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
+            .attr("r", 1.5);
+        
            
             .on('mouseover', (d) => {
               let left = d3.event.pageX 
