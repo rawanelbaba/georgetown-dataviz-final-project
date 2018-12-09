@@ -69,6 +69,13 @@ var mapSvg = d3.select("#chart-2").append('svg'),
     mapWidth = 800,
     mapHeight = 600;
 
+let margin = {
+  'top' : 40,
+  'right' : 20,
+  'bottom' : 20,
+  'left' : 20
+}
+
 // Select the div with an id of tooltip
 let Maptooltip = d3.select('#tooltip')
 
@@ -104,6 +111,9 @@ d3.json("world-data.json")
             .enter().append('circle')
             .attr("fill", "red")   
             
+            .attr('r', (d) => {
+                return scaleSqrt(d.No_Killed)
+        })
             .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
            
