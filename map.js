@@ -80,8 +80,6 @@ var projection = d3.geoNaturalEarth()
 var path = d3.geoPath()
     .projection(projection);
 
-let size = d3.scaleSqrt()
-
 // Load external data and boot
 d3.json("world-data.json")
     .then((topo) => {
