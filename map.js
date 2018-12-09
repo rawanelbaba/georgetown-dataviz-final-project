@@ -82,7 +82,7 @@ var path = d3.geoPath()
 
 let size = d3.scaleSqrt()
     .domain([0,112])
-    .range([0,50])
+    .range([0,15])
 
 // Load external data and boot
 d3.json("world-data.json")
