@@ -111,9 +111,6 @@ d3.json("world-data.json")
             .enter().append('circle')
             .attr("fill", "red")   
             
-            .attr('r', (d) => {
-                return scaleSqrt(d.No_Killed)
-        })
             .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
            
