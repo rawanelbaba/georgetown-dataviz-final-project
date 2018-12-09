@@ -82,6 +82,7 @@ var path = d3.geoPath()
 
 let size = d3.scaleSqrt()
     .domain([0,112])
+    .range([0,50])
 
 // Load external data and boot
 d3.json("world-data.json")
@@ -109,7 +110,6 @@ d3.json("world-data.json")
             .on('mouseover', (d) => {
               let left = d3.event.pageX 
               let top = d3.event.pageY
-            .range([0,15])
 
               let html = `${d.No_Killed} killed<br>${d.Country_Name}`
               
