@@ -131,6 +131,5 @@ d3.json("world-data.json")
                 _this.attr('cx', proj[0])
                     .attr('cy', proj[1])
                     .attr('r', size(d.No_Killed))
-
-            })
+                    .sort(function(cx, cy) { return cy.No_killed - cx.No_Killed; })
     })
