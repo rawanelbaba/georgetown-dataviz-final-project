@@ -106,7 +106,6 @@ d3.json("world-data.json")
             
             .attr('fill-opacity', 0.3)
             .attr('class', 'death-circle')
-            .attr("r", 1.5);
         
            
             .on('mouseover', (d) => {
