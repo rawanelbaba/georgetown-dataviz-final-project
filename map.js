@@ -64,7 +64,7 @@ let pointData = [
 {"Country_Name":"United States","No_Killed":9,"lat":37.09024,"lon":-95.712891},
 {"Country_Name":"Venezuela","No_Killed":1,"lat":6.42375,"lon":-66.58973},
 {"Country_Name":"Yemen","No_Killed":19,"lat":15.552727,"lon":48.516388}]
-
+pointData.sort((a,b) => { return b['No_Killed'] - a['No_Killed'] })
 var mapSvg = d3.select("#chart-2").append('svg'),
     mapWidth = 800,
     mapHeight = 600;
