@@ -112,6 +112,6 @@ d3.csv('Journalists-Killed.csv').then((data) => {
       var text = d3.select(this).select("text");
       if (text.classed("selectedText")) {
       text.classed("selectedText", false);
-      })
+    })
 
 }) 
