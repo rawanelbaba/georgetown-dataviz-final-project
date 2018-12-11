@@ -109,6 +109,7 @@ d3.csv('Journalists-Killed.csv').then((data) => {
       let filter = e[i].getAttribute('data-filter')
       let wording = e[i].getAttribute('data-wording')
       renderChart(filter,wording)
+      .on("click", function(){d3.select(this).style("fill-opacity", "0.3")
     })
 
 }) 
