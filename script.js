@@ -111,6 +111,6 @@ d3.csv('Journalists-Killed.csv').then((data) => {
       renderChart(filter,wording)
     })
     .attr('fill-opacity', 0.3)
-    .attr('class', 'navi')
+    .attr('class', 'nav-1')
 
 }) 
