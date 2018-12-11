@@ -112,4 +112,4 @@ d3.csv('Journalists-Killed.csv').then((data) => {
       .on("click", function(){d3.select(this).style("fill-opacity", "0.3")
     })
 
-}) 
+})
