@@ -4,6 +4,18 @@ let height = 400
 // Select the div with an id of tooltip
 let tooltip = d3.select('#tooltip')
 
+d3.selectAll(".navchart").on("click", function() {
+  //check if navchart is already selected
+  var text = d3.select(this).select("text");
+  if (text.classed("selectedText")) {
+    text.classed("selectedText", false);
+    //Remove class selectedNode
+  } else {
+    text.classed("selectedText", true);    
+    //Adds class selectedNode
+  }
+});
+
 let margin = {
   'top' : 40,
   'right' : 20,
