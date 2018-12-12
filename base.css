@@ -122,7 +122,7 @@ h1 {
   text-decoration: none;
 }
 
-.chart-nav { 
+#nav a.chart-nav { 
   background-color: #cec7c7;
   color: black;   
 }
