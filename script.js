@@ -105,10 +105,15 @@ d3.csv('Journalists-Killed.csv').then((data) => {
 
     renderChart()
 
-    d3.selectAll('#nav a').on('click', (d,i,e) => {
+    let buttons = d3.selectAll('#nav a')
+    buttons.on('click', (d,i,e) => {
+      buttons.classed("chart-nav", false)
+      d3.select(e[i])
+        .classed("chart-nav", true)
       let filter = e[i].getAttribute('data-filter')
       let wording = e[i].getAttribute('data-wording')
       renderChart(filter,wording)
+
     })
 
 })
